@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "139580095997",
+    "project_id": "librarymanagementapp-f25cb",
+    "storage_bucket": "librarymanagementapp-f25cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139580095997:android:306f10f898614cfc4aed94",
+        "android_client_info": {
+          "package_name": "com.applicationnexus.librarymanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139580095997-jq48sa04prjbaa8vcp07hq1e610gop5r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.applicationnexus.librarymanagement",
+            "certificate_hash": "946993099a04205a955f803b9ac68162a123fa60"
+          }
+        },
+        {
+          "client_id": "139580095997-6e26nc3hh0kdpav8u4n1b5tn5a168pvg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCj382gndoc5tIX3OexqFQhQMUfM5V9-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139580095997-6e26nc3hh0kdpav8u4n1b5tn5a168pvg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">LibraryManagementApp</string>
+    <string name="title_activity_main">LibraryManagementApp</string>
+    <string name="package_name">com.applicationnexus.librarymanagement</string>
+    <string name="custom_url_scheme">com.applicationnexus.librarymanagement</string>
+    <string name="server_client_id">139580095997-6e26nc3hh0kdpav8u4n1b5tn5a168pvg.apps.googleusercontent.com</string>
+</resources>

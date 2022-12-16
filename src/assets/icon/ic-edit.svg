@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="ic-edit" transform="translate(0 8.934)">
+    <circle id="Ellipse_44" data-name="Ellipse 44" cx="15" cy="15" r="15" transform="translate(0 -8.934)" fill="#ff3a00"/>
+    <g id="pencil" transform="translate(10.065 0.01)">
+      <path id="Path_142" data-name="Path 142" d="M-248.268,382.3l-8.642,8.553c-.045.672-.045,1.3-.09,1.97.672,0,1.388-.045,2.06-.045l8.553-8.553C-247.014,383.554-247.641,382.927-248.268,382.3Z" transform="translate(257 -382.3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+      <path id="Path_143" data-name="Path 143" d="M-239.3,384.3l1.791,1.791" transform="translate(246.503 -382.682)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>
