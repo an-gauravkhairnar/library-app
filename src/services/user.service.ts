@@ -1,6 +1,6 @@
 import { db } from '../config/firebase';
 
-export default new class User {
+ class UserService {
 
   public async addUser(data: any): Promise<any> {
     try {
@@ -18,3 +18,5 @@ export default new class User {
     }
   }
 }
+
+export default new UserService();

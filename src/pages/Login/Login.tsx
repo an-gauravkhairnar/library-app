@@ -3,6 +3,8 @@ import { auth, firebase } from '../../config/firebase';
 import userService from '../../services/user.service';
 import { useHistory } from 'react-router';
 import { useLoadingAndToast } from '../../hooks/useLoadingAndToast';
+import { RESGISTRATION,NOTACEESS} from '../../constants/constants'
+import { setValue } from '../../services/storage.service'
 import '../Login/Login.scss';
 
 const LoginPage: React.FC = () => {
@@ -17,14 +19,14 @@ const LoginPage: React.FC = () => {
       const user: any = result.additionalUserInfo?.profile;
       if (user?.email.includes('application')) {
         const isPresent = await userService.getUser(user?.email);
-        isPresent.length === 0 ? afterGoogleLoginSuccess(result, user) : history.push('admin');
+        isPresent.length === 0 ? afterGoogleLoginSuccess(result, user) : rediractAdmin(user);
       } else {
         dismissLoader();
-        showToast("You have not access this app");
+        showToast(NOTACEESS);
       }
     } catch (error) {
-      dismissLoader()
-      showToast();
+      dismissLoader();
+      showToast(NOTACEESS);
     }
   })
 
@@ -35,14 +37,23 @@ const LoginPage: React.FC = () => {
       if (googleSignInResult) {
         user.role = 1;
         await userService.addUser(user);
-        showToast("User registration successfully");
-        dismissLoader();
-        history.push('admin');
+        showToast(RESGISTRATION);
+        rediractAdmin(user);
       }
     } catch (error) {
-      console.log('TCL ->  ~ file: Login.tsx:26 ~ onGoogleLoginSuccess ~ error', error);
+      showToast(NOTACEESS);
     }
   };
+
+  const rediractAdmin = (data:any) =>{
+    const user = {
+      name: data.name,
+      email:data.email
+    }
+    setValue("User",JSON.stringify(user));
+    dismissLoader();
+    history.push('admin');
+  }
 
   return (
     <IonContent>
